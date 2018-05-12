@@ -11,13 +11,13 @@
     </div>
   <% end %>
 
-  <div class="blog_title">
+  <div class="blog_title form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class:"form-control" %>
   </div>
-  <div class="blog_title">
+  <div class="blog_title form-group">
     <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.text_field :content, class:"form-control" %>
   </div>
   <%= form.submit "送信", class: "btn btn-default" %>
 <% end %>

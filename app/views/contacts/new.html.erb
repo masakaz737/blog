@@ -16,17 +16,17 @@
     </div>
     <% end %>
 
-    <div class = "contact_name">
+    <div class = "contact_name form-group">
         <%= form.label :name %>
-        <%= form.text_field :name %>
+        <%= form.text_field :name, class:"form-control" %>
     </div>
-    <div class = "contact_email">
+    <div class = "contact_email form-group">
         <%= form.label :email %>
-        <%= form.email_field :email %>
+        <%= form.email_field :email, class:"form-control" %>
     </div>
-    <div class = "contact_content">
+    <div class = "contact_content form-group">
         <%= form.label :content %>
-        <%= form.text_field :content %>
+        <%= form.text_field :content, class:"form-control" %>
     </div>
     <%= form.submit "送信", class: 'btn btn btn-default' %>
 <% end %>

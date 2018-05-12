@@ -6,13 +6,13 @@
   <% @blogs.each do |blog| %>
     <div class="col-md-6 blog-item">
       <table>
-        <tr>
-          <th>タイトル</th>
-          <th>内容</th>
+        <tr class="row">
+          <th class="col-xs-4">タイトル</th>
+          <th class="col-xs-8">内容</th>
         </tr>
-        <tr>
-          <td><%= blog.title %></td>
-          <td><%= blog.content %></td>
+        <tr class="row">
+          <td class="col-xs-4"><%= blog.title %></td>
+          <td class="col-xs-8"><%= blog.content %></td>
         </tr>
       </table>
       <div class="btn-group btn-group-justified" role="group" aria-label="...">

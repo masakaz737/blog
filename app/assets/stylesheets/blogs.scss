@@ -12,6 +12,10 @@
   background-color: white;
 }
 
+.blog-item table{
+  width: 100%;
+}
+
 .blog-item th{
   padding:5px;
   padding-right: 20px;
@@ -19,6 +23,7 @@
 
 .blog-item td{
   padding: 5px;
+  word-break:break-all;
 }
 
 .blog-item a{
