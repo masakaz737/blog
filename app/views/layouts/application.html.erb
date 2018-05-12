@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sample</title>
+    <title>Blog</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+    <div class="container">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">Blog</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Blog</a>
+        </div>
+        <div id="gnavi" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <%= link_to "TOP", "/" %>
+            </li>
+            <li>
+              <%= link_to "ブログ一覧", blogs_path %>
+            </li>
+            <li>
+              <%= link_to "新規投稿", new_blog_path %>
+            </li>
+            <li>
+              <%= link_to "お問合せ", new_contact_path %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <%= yield %>
+
+    <footer class="navbar navbar-inverse">
+      <p class="footer_inner">Dive into Code test application</p>
+    </footer>
+  </div>
   </body>
 </html>

@@ -1,3 +1,40 @@
-// Place all the styles related to the blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.layout{
+  width: 90%;
+  min-width: 460px;
+  margin: auto;
+}
+
+.blog-item{
+  box-shadow: 0 2px 6px #c1ced7;
+  padding: 0;
+  background-color: white;
+}
+
+.blog-item th{
+  padding:5px;
+  padding-right: 20px;
+}
+
+.blog-item td{
+  padding: 5px;
+}
+
+.blog-item a{
+  padding: 5px;
+}
+
+.btn-group-justified{
+  padding: 5px;
+  width: auto;
+  max-width: 50%;
+}
+
+.new-action{
+  padding-bottom: 60px;
+}
+
+.new-action p{
+  margin: 0;
+}

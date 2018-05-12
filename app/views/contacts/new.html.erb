@@ -1,3 +1,5 @@
+<div class="layout">
+
 <h2>お問合わせ</h2>
 <p><%= notice %></p>
 
@@ -13,7 +15,7 @@
         </ul>
     </div>
     <% end %>
-          
+
     <div class = "contact_name">
         <%= form.label :name %>
         <%= form.text_field :name %>
@@ -26,5 +28,7 @@
         <%= form.label :content %>
         <%= form.text_field :content %>
     </div>
-    <%= form.submit %>
+    <%= form.submit "送信", class: 'btn btn btn-default' %>
 <% end %>
+
+</div>
