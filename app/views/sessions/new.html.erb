@@ -1,0 +1,20 @@
+<div class="layout">
+  <h1>Log in</h1>
+  <p><%= notice %></p>
+  <%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+
+  <div class="login-email">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="login-password">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="login-submit">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+</div>

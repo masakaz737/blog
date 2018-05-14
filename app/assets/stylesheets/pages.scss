@@ -6,6 +6,12 @@ body{
   height: 100%;
 }
 
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .container{
   width:100%;
   position: relative;
@@ -17,6 +23,33 @@ body{
 
 .navbar{
   margin-bottom: 0;
+}
+
+.nav{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav li a{
+  padding: 15px;
+}
+
+.navbar-header{
+  float: left;
+  margin-right: 15px;
+}
+
+.header-menu{
+  float: left;
+}
+
+.navbar-nav li{
+  float: left;
+}
+
+.login-status{
+  float: right;
+  margin-right: 0;
 }
 
 footer.navbar{
