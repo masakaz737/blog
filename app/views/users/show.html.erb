@@ -1,4 +1,10 @@
 <div class="layout">
   <h1><%= @user.name %>のページ</h1>
   <p>メールアドレス: <%= @user.email %></p>
+  <p>＜お気に入りBlog＞</p>
+  <% @favorite_blogs.each do |blog| %>
+    <p>タイトル: <%= blog.title %>
+        内容: <%= blog.content %>
+        <button type="button" class="btn btn-default"><%= link_to '詳細を確認する', blog_path(blog.id) %></button></p>
+  <% end %>
 </div>
