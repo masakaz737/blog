@@ -17,13 +17,15 @@
         <div class="btn-group" role="group">
           <button type="button" class="btn btn-default"><%= link_to '詳細を確認する', blog_path(blog.id) %></button>
         </div>
-        <% if current_user.id == blog.user_id %>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default"><%= link_to "ブログを編集する", edit_blog_path(blog.id) %></button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default"><%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></button>
-          </div>
+        <% if logged_in? %>
+          <% if current_user.id == blog.user_id %>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default"><%= link_to "ブログを編集する", edit_blog_path(blog.id) %></button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default"><%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></button>
+            </div>
+          <% end %>
         <% end %>
       </div>
 
